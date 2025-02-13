@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISC</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #605c5c;
+      width: 100%;
+      
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background-color: #484622;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #484622;
+      color: white;
+    }
+
+    .back-button {
+      background-color: rgb(210, 152, 44);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .back-button:hover {
+      background-color: orange;
+    }
+
+    .overview-container {
+      display: flex;
+      align-items: flex-start;
+      background-color: #fff;
+      padding-left: 40px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .overview-container .text {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .overview-container .event-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      height: 300px;
+      margin-top: 20px;
+    }
+
+    .overview-container img {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+
+    .sports-container {
+      background-color: #ffecb3;
+      padding-left: 40px;
+      border: 1px solid #ddd;
+    }
+
+    .sports-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sports-section {
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .sports-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .rules-container {
+      background-color: #f8e9e9;
+      padding-left: 40px;
+      border: 1px solid #ddd;
+    }
+    ul.rules-list {
+        list-style-type: none;
+      }
+      ul.rules-list li::before {
+        content: "\2713 ";
+        color: green;
+      }
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ISC - Inter School Championship</h1>
+    <p>An exciting competition among schools in various sports</p>
+  </header>
+  <div class="event-details">
+    <div class="overview-container">
+      <div class="text"><br>
+        <h2 style="color: black;">Event Overview</h2>
+        <p>The Inter School Championship (ISC) is an exciting sports competition between prominent schools, fostering a spirit of sportsmanship and healthy competition. Participating schools include SEAS, ESLA, and PSB, where students showcase their athletic skills in a wide range of events. This event offers a unique opportunity for schools to compete in a variety of sports while promoting teamwork, discipline, and overall development. </p><br>
+        <h2  style="color: black;">Event Highlights</h2>
+        <ul>
+          <li>Competitions between SEAS, ESLA, and PSB schools</li>
+          <li>Showcase of young athletic talent</li>
+          <li>Interactive sports workshops</li>
+          <li>Sports Merchandise and Booths</li>
+        </ul>
+      </div>
+      <div class="event-image">
+        <img src="https://media.licdn.com/dms/image/v2/D5622AQFel7mkpFbnig/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1728550610779?e=1740009600&v=beta&t=-ox5Jg3YaCBpEOjetDHtt1i5Tkse9F6MepM-yu1HLQw" alt="ISC Event Image">
+      </div>
+    </div>
+    <div class="sports-container">
+      <h2 style="color: black;">Sports Conducted</h2>
+      <div class="sports-flex">
+        <div class="sports-section">
+          <h3>Indoor Sports</h3>
+          <ul>
+            <li>Carroms</li>
+            <li>Chess</li>
+            <li>Fitness</li>
+          </ul>
+        </div>
+        <div class="sports-section">
+          <h3>Outdoor Sports</h3>
+          <ul>
+            <li>Volleyball</li>
+            <li>Cricket</li>
+            <li>Football</li>
+            <li>Basketball</li>
+            <li>Kabaddi</li>
+          </ul>
+        </div>
+        <div class="sports-section">
+          <h3>Racket Games</h3>
+          <ul>
+            <li>Badminton</li>
+            <li>Tennis</li>
+            <li>Table Tennis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rules-container">
+      <h2  style="color: black;">Rules</h2>
+      <ul class="rules-list">
+        <li> TEAMS MUST BE FROM THE SAME SCHOOL AND ACADEMIC YEAR.</li>
+        <li> SCHOOLS: SEAS (CSE, CE, EEE, etc), PSB (BBA, MBA, B.COM), ESLA (BA, BSC IN PSYCHOLOGY, ECONOMICS).</li>
+        <li> PARTICIPANTS CAN JOIN ONLY ONE TEAM PER SPORT.</li>
+        <li> THEY CAN COMPETE IN MULTIPLE SPORTS, BUT NOT ON MORE THAN ONE TEAM PER SPORT.</li>
+        <li> NO CHANGES TO TEAM MEMBERS AFTER REGISTRATION.</li>
+        <li> TEAMS MUST KEEP THE ORIGINAL LINEUP THROUGHOUT THE COMPETITION.</li>
+      </ul>
+      <p><strong>T&C APPLY</strong></p>
+    </div>
+    <div class="overview-container">
+      <div class="text">
+        <h2  style="color: black;">Details</h2>
+        <p><strong>Date:</strong> October 09 - November 02, 2025</p>
+        <p><strong>Location:</strong> SRM University AP</p>
+        <p><strong>Contact:</strong> <a href="mailto:sportsevent.helpdesk@srmap.edu.in">sportsevent.helpdesk@srmap.edu.in</a></p>
+        <a href="events.html" class="back-button">Back to Events</a><br><br>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 SRM University AP - All Rights Reserved</p>
+  </footer>
+</body>
+</html>

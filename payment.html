@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM AP Sports Registration Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-color: #f9f6ef;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .payment-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 0;
+        }
+        .payment-logos img {
+            width: 100px;
+            height: 50px;
+        }
+        header, footer {
+            background-color: #484622;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            width: 80%;
+            gap: 20px;
+        }
+        .terms-box {
+            width: 35%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f4f4f4;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .terms-box h3 {
+            text-align: center;
+        }
+        .payment-box {
+            width: 65%;
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+            display: flex;
+        }
+        .payment-options {
+            width: 30%;
+            padding-right: 20px;
+            border-right: 2px solid #ccc;
+        }
+        .payment-options button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 15px;
+            border: none;
+            background-color: #3b9c3b;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .payment-options button:hover {
+            background-color: #fffffe;
+        }
+        .payment-details {
+            width: 70%;
+            padding-left: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .checkbox-container {
+            margin-top: 10px;
+        }
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+        button.green-btn {
+            background-color: green;
+            color: white;
+            font-size: 14px;
+            padding: 8px;
+            border-radius: 5px;
+            width: auto;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button.green-btn:hover {
+            background-color: darkgreen;
+        }
+        .loading-spinner {
+            display: none;
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            margin-left: 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .success-message {
+            display: none;
+            color: green;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Payment Details</h2>
+    </header>
+    <div class="container">
+        <div class="content">
+            <!-- Terms & Conditions Box -->
+            <div class="terms-box">
+                <h3>Terms & Conditions</h3>
+                <ul>
+                    <li>All payments are <b>non-refundable</b> under any circumstances.</li>
+                    <li>The university is <b>not responsible</b> for any injuries or accidents.</li>
+                    <li>Participants must follow all event rules and regulations.</li>
+                    <li>Any misbehavior may result in <b>disqualification</b> from the event.</li>
+                    <li>Payment confirmation must be shown at the registration desk.</li>
+                    <li>All personal details should be <b>accurately entered</b> during payment.</li>
+                    <li>The university reserves the right to make last-minute changes.</li>
+                </ul>
+            </div>
+
+            <!-- Payment Box (Moved to the right) -->
+            <div class="payment-box">
+                <div class="payment-options">
+                    <h3>Select a Payment Method</h3>
+                    <button onclick="showOption('credit')">Credit Card</button>
+                    <button onclick="showOption('debit')">Debit Card</button>
+                    <button onclick="showOption('upi')">UPI</button>
+                    <button onclick="showOption('netbanking')">Net Banking</button>
+                </div>
+
+                <div class="payment-details">
+                    <div id="credit" class="hidden">
+                        <h3>Enter Card Details</h3>
+                        <input type="text" placeholder="Card Number" required><br><br>
+                        <input type="text" placeholder="Expiry Date (MM/YY)" required><br><br>
+                        <input type="text" placeholder="CVV" required><br><br>
+                        <input type="text" placeholder="Card Holder's Name" required><br><br>
+                        <button class="green-btn" onclick="processPayment()">Pay Now</button>
+                        <div class="loading-spinner" id="loading-spinner"></div>
+                        <div class="success-message" id="success-message">Payment Successful!</div>
+                    </div>
+
+                    <div id="debit" class="hidden">
+                        <h3>Enter Card Details</h3>
+                        <input type="text" placeholder="Card Number" required><br><br>
+                        <input type="text" placeholder="Expiry Date (MM/YY)" required><br><br>
+                        <input type="text" placeholder="CVV" required><br><br>
+                        <input type="text" placeholder="Card Holder's Name" required><br><br>
+                        <button class="green-btn" onclick="processPayment()">Pay Now</button>
+                        <div class="loading-spinner" id="loading-spinner"></div>
+                        <div class="success-message" id="success-message">Payment Successful!</div>
+                    </div>
+
+                    <div id="upi" class="hidden">
+                        <h3>Scan QR Code</h3>
+                        <img src="https://srmap.edu.in/wp-content/uploads/2023/12/ICMG-QR-Code.jpg" alt="UPI QR Code" width="200"><br><br>
+                        <button class="green-btn" onclick="processPayment()">Pay Now</button>
+                        <div class="loading-spinner" id="loading-spinner"></div>
+                        <div class="success-message" id="success-message">Payment Successful!</div>
+                    </div>
+
+                    <div id="netbanking" class="hidden">
+                        <h3>Net Banking Details</h3>
+                        <p>Beneficiary Name: SRM AP Sports</p>
+                        <p>Account Number: 1234567890</p>
+                        <p>Bank Branch Name: SRM AP Branch</p>
+                        <p>IFSC Code: SRMAP000123</p>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="screenshot" name="screenshot" required>
+                            <label for="screenshot"> I agree to send the screenshot of my payment along with the transaction ID to <b>sportsevents@srmap.edu.in</b></label>
+                        </div>
+                        <button class="green-btn" onclick="processPayment()">Pay Now</button>
+                        <div class="loading-spinner" id="loading-spinner"></div>
+                        <div class="success-message" id="success-message">Payment Successful!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="payment-logos">
+        <img src="https://cdn.prod.website-files.com/64199d190fc7afa82666d89c/648b606d4a139591f6b3440c_mastercard-1.png" alt="Mastercard">
+        <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" alt="Visa">
+        <img src="https://5.imimg.com/data5/BC/QE/UQ/SELLER-24930669/hdfc-bank-500x500.jpg" alt="RuPay">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6WTBxTn7odyTEwT25sLABqJ8tXGcD5BLZw&s" alt="Discover">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWvNVeGFA3OBzZ8nRuACZqki3iDkl4sY3gg&s" alt="SBI">
+        <img src="https://im.hunt.in/cg/Vijayawada/City-Guide/ICICI-Bank.jpg" alt="HDFC">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3Ty9tf63fwrhipuWiBzzLOvZ5KPAmtl5zFy4m4onmkNZhy0PUQSTKMI290JLE4uLE54&usqp=CAU" alt="Axis Bank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFD5xlx9NIS7ldCJfn6sNLSyPKeSmdvj1pCw&s" alt="ICICI">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SRM University AP - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function showOption(option) {
+            document.getElementById('credit').classList.add('hidden');
+            document.getElementById('debit').classList.add('hidden');
+            document.getElementById('upi').classList.add('hidden');
+            document.getElementById('netbanking').classList.add('hidden');
+            document.getElementById(option).classList.remove('hidden');
+        }
+
+        function processPayment() {
+            const spinner = document.getElementById('loading-spinner');
+            const successMessage = document.getElementById('success-message');
+            spinner.style.display = 'inline-block';
+            setTimeout(() => {
+                spinner.style.display = 'none';
+                successMessage.style.display = 'block';
+            }, 2000); // Simulate a 2-second payment processing time
+        }
+    </script>
+</body>
+</html>

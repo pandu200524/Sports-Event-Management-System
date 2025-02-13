@@ -1,0 +1,45 @@
+<form onsubmit="return handleLogin()">
+    <label for="appNumber">Application Number / Register Number</label>
+    <input type="text" id="appNumber" name="appNumber" required>
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    <p id="passwordMessage" class="message"></p>
+  
+    <div class="captcha-box" id="captcha">E2753</div>
+    <label for="captchaInput">Enter Captcha Text</label>
+    <input type="text" id="captchaInput" name="captchaInput" required>
+    <p id="captchaMessage" class="message"></p>
+  
+    <button type="submit">Login</button>
+  </form>
+  <script>
+    function handleLogin() {
+      const appNumber = document.getElementById("appNumber").value;
+      const password = document.getElementById("password").value;
+      const captchaInput = document.getElementById("captchaInput").value;
+      const captcha = document.getElementById("captcha").innerText;
+  
+      // Password validation
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
+      if (!passwordRegex.test(password)) {
+        document.getElementById("passwordMessage").innerText = 
+          "Password must be at least 8 characters, contain an uppercase letter, a lowercase letter, a number, and a special character.";
+        document.getElementById("passwordMessage").style.color = "red";
+        return false;
+      }
+  
+      // Captcha validation
+      if (captchaInput !== captcha) {
+        document.getElementById("captchaMessage").innerText = 
+          "Captcha does not match.";
+        document.getElementById("captchaMessage").style.color = "red";
+        return false;
+      }
+  
+      // Redirect to event registration form if validation passes
+      window.location.href = "registration.html";
+      return false;
+    }
+  </script>
+  

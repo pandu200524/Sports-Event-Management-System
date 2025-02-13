@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      background-color: #484622;
+      color: white;
+    }
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .event-card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .event-card:hover {
+      transform: translateY(-5px);
+    }
+    .event-card h2 {
+      margin-bottom: 10px;
+      color: #484622;
+      font-size: 1.5rem;
+    }
+    .event-card p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+    .event-card button {
+      background-color: rgb(210, 152, 44);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    .event-card button:hover {
+      background-color: orange;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #484622;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>All Events</h1>
+    <p>Explore our exciting events and activities</p>
+  </header>
+  <div class="events-grid">
+    <div class="event-card">
+      <h2>Udgam</h2>
+      <p>National Level Sports Fest - Celebration of Sportsmanship and Excellence</p>
+      <button target="blank" onclick="window.location.href='udgam.html'">More Info</button>
+    </div>
+    <div class="event-card">
+      <h2>Inter School Championship</h2>
+      <p>An exciting competition among schools in various sports</p>
+      <button target="blank" onclick="window.location.href='isc.html'">More Info</button>
+    </div>
+    <div class="event-card">
+      <h2>Inter Hostel Competition</h2>
+      <p>Competitive events between hostel teams</p>
+      <button target="blank" onclick="window.location.href='ihc.html'">More Info</button>
+    </div>
+    <div class="event-card">
+      <h2>National Sports Day</h2>
+      <p>Celebrating the spirit of sports and fitness</p>
+      <button target="blank"  onclick="window.location.href='sportsday.html'">More Info</button>
+    </div>
+    <div class="event-card">
+      <h2>Yoga Day</h2>
+      <p>Promoting physical and mental wellness through yoga sessions</p>
+      <button target="blank"  onclick="window.location.href='yoga.html'">More Info</button>
+    </div>
+    <div class="event-card">
+      <h2>PhD Scholar Meet</h2>
+      <p>Sport's league where research meets resilience</p>
+      <button target="blank" onclick="window.location.href='phd.html'">More Info</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 SRM University AP - All Rights Reserved</p>
+  </footer>
+  <script>
+    function showEventDetails(eventName) {
+      alert("More details about " + eventName + " will be available soon.");
+    }
+  </script>
+</body>
+</html>
