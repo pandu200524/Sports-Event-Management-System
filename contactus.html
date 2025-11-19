@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav>
+        <h1>Contact Us</h1>
+    </nav>
+    <div class="content">
+        <div class="contact-info">
+            <h2>SRM University - AP</h2>
+            <p><strong>Address:</strong><br>
+                SRM University-AP, Andhra Pradesh<br>
+                Neerukonda, Mangalagiri Mandal<br>
+                Guntur District, Mangalagiri, Andhra Pradesh 52224
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:sportsevent.helpdesk@srmap.edu.in">sportsevent.helpdesk@srmap.edu.in</a></p>
+            <p><strong>Phone:</strong> +91 8309357286</p>
+            <p><strong>Website:</strong> <a href="https://www.srmap.edu.in" target="_blank">www.srmap.edu.in</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/SRMUAP/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/school/srmuap/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sportscouncilsrmuap/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/SRMUAP" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/c/SRMUniversityAP" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="leave-reply">
+            <h2>Leave a Reply</h2>
+            <form action="process_contact.php" method="POST">
+                <label for="comment">Comment *</label>
+                <textarea id="comment" name="comment" rows="5" placeholder="Your message" required></textarea>
+                <label for="name">Name *</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required>
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" placeholder="Your email" required>
+                <button type="submit">Post Comment</button>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7254570735795!2d80.54030557474982!3d16.44162207968933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f09f7dc93941%3A0x51aa3d401c47c38a!2sSRM%20University%20AP!5e0!3m2!1sen!2sin!4v1692918126545!5m2!1sen!2sin" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <p>&copy; 2025 SRM University AP - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

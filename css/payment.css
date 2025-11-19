@@ -1,0 +1,104 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+body { 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #f9f6ef; 
+}
+header, footer { 
+    background-color: #484622; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+}
+.container { 
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+}
+.content { 
+    display: flex; 
+    width: 80%; 
+    gap: 20px; 
+}
+.terms-box { 
+    width: 35%; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background: #f4f4f4; 
+    font-size: 14px; 
+    line-height: 1.6; 
+}
+.payment-box { 
+    width: 65%; 
+    padding: 40px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background: #f9f9f9; 
+    display: flex; 
+}
+.payment-options { 
+    width: 30%; 
+    padding-right: 20px; 
+    border-right: 2px solid #ccc; 
+}
+.payment-options button { 
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 15px; 
+    border: none; 
+    background-color: #3b9c3b; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+.payment-options button:hover { 
+    background-color: rgb(210, 152, 44); 
+}
+.payment-details { 
+    width: 70%; 
+    padding-left: 20px; 
+}
+.hidden { 
+    display: none; 
+}
+.credit-card-form, .upi-box, .net-banking-box { 
+    background-color: #ccc; 
+    padding: 20px; 
+    border-radius: 7px; 
+}
+.credit-card-form input { 
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    border-radius: 5px; 
+    background-color: #f8f9fa; 
+}
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0;
+}
+.payment-logos img {
+    width: 100px;
+    height: 50px;
+}
+.green-btn {
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.green-btn:hover {
+    background-color: darkgreen;
+}

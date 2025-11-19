@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #605c5c;
+    width: 100%;
+  }
+  
+  header {
+    text-align: center;
+    padding: 30px;
+    background-color: #484622;
+    color: white;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #484622;
+    color: white;
+  }
+  
+  .back-button {
+    background-color: rgb(210, 152, 44);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .back-button:hover {
+    background-color: orange;
+  }
+  
+  .overview-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding-left: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    gap: 40px;
+  }
+  
+  .text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .overview-container .event-image {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    padding-right: 40px;
+  }
+  .overview-container img {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 6px;
+  }
+  .event-sports-container {
+      display: flex;
+      gap: 20px;
+      padding: 20px 40px;
+      background-color: #ffecb3;
+      border: 1px solid #ddd;
+    }
+    .sports-section, .event-details-section {
+      flex: 1;
+      padding-left: 90px;
+    }
+    .sports-section {
+      border-right: 2px solid #1e1d1d;
+      padding-right: 20px;
+    }
+    .overview-container ul {
+      padding-left: 20px;
+      list-style-type: none;
+    }
+    .overview-container li:before {
+      content: "\2605";
+      margin-right: 5px;
+      color: #ffa726;
+    }

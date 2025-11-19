@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://srmap.edu.in/wp-content/uploads/2024/03/DSC01017-1-scaled.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .header {
+    text-align: left;
+    padding: 20px;
+  } 
+  .message {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  #passwordMessage, #captchaMessage {
+    color: red; /* Default error color */
+  }
+  .header img {
+    max-width: 150px;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .content {
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size: 24px;
+    color: #497b8f;
+  }
+  .info {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  a {
+    color: #5cad55;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .login {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .captcha-box {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #5cad55;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #5cad55;
+  }
+  .message {
+    font-size: 14px;
+    color: #666;
+  }
+  .social-media {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  .social-media a:hover {
+    color: #d1a74a;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #484622;
+    color: white;
+  }

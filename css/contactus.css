@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #484622;
+    padding: 10px;
+    text-align: center;
+}
+
+nav h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .leave-reply {
+    flex: 1 1 48%;
+}
+
+.contact-info h2 {
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.contact-info p {
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #484622;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    color: #624d31;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    color: #484622;
+}
+
+.leave-reply h2 {
+    padding-bottom: 10px;
+}
+
+.leave-reply form {
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-reply form input, 
+.leave-reply form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.leave-reply form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #484622;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.leave-reply form button:hover {
+    background-color: #705d1b;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #484622;
+    color: white;
+}
