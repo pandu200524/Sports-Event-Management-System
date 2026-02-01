@@ -102,38 +102,60 @@ INSERT INTO groupplayers (
     transaction_id, payment_date
 )
 VALUES
-('Adithya', 'AP22110020054', 'aditya_mangam@srmap.edu.in', '9948272223', 'ECE', 'B', 'ISC', 'SEAS', 'Outdoor', 'Cricket',
- 'Adithya,Jyothi Sai Swaroop ,Hemanth,Ram Pradeep,Venkat,Teja,Geetesh,Joshua,Roshan,Surya,Ravi', 
- 'AP22110020054,AP22110010602,AP23110010635,AP22110010100,AP23110010886,AP24110011215,AP24110010228,AP24311010022,AP24110010332,AP2411001023,AP23110011140', 0.00, 'not required', 'GRP_67fbe4c7e141b', '2025-04-13', '', '0000-00-00 00:00:00'),
+('Adithya', 'AP22110020054', 'aditya_mangam@srmap.edu.in', '9948272223',
+ 'ECE', 'B', 'ISC', 'SEAS', 'Outdoor', 'Cricket',
+ 'Adithya,Jyothi Sai Swaroop ,Hemanth,Ram Pradeep,Venkat,Teja,Geetesh,Joshua,Roshan,Surya,Ravi',
+ 'AP22110020054,AP22110010602,AP23110010635,AP22110010100,AP23110010886,AP24110011215,AP24110010228,AP24311010022,AP24110010332,AP2411001023,AP23110011140',
+ 0.00, 'not required', 'GRP_67fbe4c7e141b', '2025-04-13', '', '0000-00-00 00:00:00'),
 
-('Vaishnavi K', 'AP22110010126', 'vaishnavi_kolasani@srmap.edu.in', '6305094874', 'CSE', 'A', 'Udgam', 'Outdoor', 'Volleyball', 
- 'Vaishnavi ,Swathi,Bandhavi,Hema,Abhigna,Asmita', 
- 'AP22110010126,AP22110010084,AP22110010079,AP22110010080,AP22110010752,APP22110010868', 800.00, 'paid', 'GRP_67fbe530a7185', '2025-04-13', 'UDGAM1744561465', '2025-04-13 18:24:25'),
+('Vaishnavi K', 'AP22110010126', 'vaishnavi_kolasani@srmap.edu.in', '6305094874',
+ 'CSE', 'A', 'Udgam', 'Outdoor', 'Volleyball', 'Vaishnavi ,Swathi,Bandhavi,Hema,Abhigna,Asmita',
+ 'AP22110010126,AP22110010084,AP22110010079,AP22110010080,AP22110010752,APP22110010868',
+ 800.00, 'paid', 'GRP_67fbe530a7185', '2025-04-13', 'UDGAM1744561465', '2025-04-13 18:24:25'),
 
-('Rahul Sharma', 'AP22110010203', 'rahul_sharma@srmap.edu.in', '9876543210', 'CSE', 'A', 'Udgam', NULL, 'Outdoor', 'Football',
- 'Rahul, Ajay, Vijay, Sanjay, Nikhil, Aditya, Rohit, Suresh, Mahesh, Dinesh, Virat', 
- 'AP22110010203, AP22110010204, AP22110010205, AP22110010206, AP22110010207, AP22110010208, AP22110010209, AP22110010210, AP22110010211, AP22110010212, AP22110010213', 800.00, 'paid', 'GRP_67fbe530a7186', '2025-04-13', 'UDGAM17445614653', '2025-04-13 18:26:35'),
+('Rahul Sharma', 'AP22110010203', 'rahul_sharma@srmap.edu.in', '9876543210',
+ 'CSE', 'A', 'Udgam', NULL, 'Outdoor', 'Football',
+ 'Rahul, Ajay, Vijay, Sanjay, Nikhil, Aditya, Rohit, Suresh, Mahesh, Dinesh, Virat',
+ 'AP22110010203, AP22110010204, AP22110010205, AP22110010206, AP22110010207, AP22110010208, AP22110010209, AP22110010210, AP22110010211, AP22110010212, AP22110010213',
+ 800.00, 'paid', 'GRP_67fbe530a7186', '2025-04-13', 'UDGAM17445614653', '2025-04-13 18:26:35'),
 
-('Priya Patel', 'AP22110010301', 'priya_patel@srmap.edu.in', '8765432109', 'ECE', 'B', 'Udgam', NULL, 'Indoor', 'Badminton',
- 'Priya, Neha', 'AP22110010301, AP22110010302', 800.00, 'paid', 'GRP_67fbe530a7187', '2025-04-13', 'UDGAM17445614654', '2025-04-13 18:28:45'),
+('Priya Patel', 'AP22110010301', 'priya_patel@srmap.edu.in', '8765432109',
+ 'ECE', 'B', 'Udgam', NULL, 'Indoor', 'Badminton',
+ 'Priya, Neha', 'AP22110010301, AP22110010302',
+ 800.00, 'paid', 'GRP_67fbe530a7187', '2025-04-13', 'UDGAM17445614654', '2025-04-13 18:28:45'),
 
-('Arjun Kumar', 'AP22110010401', 'arjun_kumar@srmap.edu.in', '7654321098', 'MECH', 'C', 'Udgam', NULL, 'Racket', 'Tennis',
- 'Arjun, Karan', 'AP22110010401, AP22110010402', 800.00, 'paid', 'GRP_67fbe530a7188', '2025-04-13', 'UDGAM17445614655', '2025-04-13 18:30:15'),
+('Arjun Kumar', 'AP22110010401', 'arjun_kumar@srmap.edu.in', '7654321098',
+ 'MECH', 'C', 'Udgam', NULL, 'Racket', 'Tennis',
+ 'Arjun, Karan', 'AP22110010401, AP22110010402',
+ 800.00, 'paid', 'GRP_67fbe530a7188', '2025-04-13', 'UDGAM17445614655', '2025-04-13 18:30:15'),
 
-('Sneha Reddy', 'AP22110010501', 'sneha_reddy@srmap.edu.in', '6543210987', 'CSE', 'D', 'Phd Scholars Meet', NULL, 'Outdoor', 'Basketball',
- 'Sneha, Divya, Akshay, Rohan, Riya, Shreya', 'AP22110010501, AP22110010502, AP22110010503, AP22110010504, AP22110010505, AP22110010506', 0.00, 'not required', 'GRP_67fbe530a7189', '2025-04-13', '', '0000-00-00 00:00:00'),
+('Sneha Reddy', 'AP22110010501', 'sneha_reddy@srmap.edu.in', '6543210987',
+ 'CSE', 'D', 'Phd Scholars Meet', NULL, 'Outdoor', 'Basketball',
+ 'Sneha, Divya, Akshay, Rohan, Riya, Shreya',
+ 'AP22110010501, AP22110010502, AP22110010503, AP22110010504, AP22110010505, AP22110010506',
+ 0.00, 'not required', 'GRP_67fbe530a7189', '2025-04-13', '', '0000-00-00 00:00:00'),
 
-('Ankit Joshi', 'AP22110010601', 'ankit_joshi@srmap.edu.in', '5432109876', 'ECE', 'A', 'Phd Scholars Meet', NULL, 'Indoor', 'Chess',
- 'Ankit, Tanuj', 'AP22110010601, AP22110010621', 0.00, 'not required', 'GRP_67fbe530a7190', '2025-04-13', '', '0000-00-00 00:00:00'),
+('Ankit Joshi', 'AP22110010601', 'ankit_joshi@srmap.edu.in', '5432109876',
+ 'ECE', 'A', 'Phd Scholars Meet', NULL, 'Indoor', 'Chess',
+ 'Ankit, Tanuj', 'AP22110010601, AP22110010621',
+ 0.00, 'not required', 'GRP_67fbe530a7190', '2025-04-13', '', '0000-00-00 00:00:00'),
 
-('Karthik Rao', 'AP22110010701', 'karthik_rao@srmap.edu.in', '9632587410', 'CSE', 'B', 'Udgam', NULL, 'Outdoor', 'Cricket',
- 'Karthik, Dhruv, Hitesh, Imran, Jamal, Lokesh, Mahesh, Naveen, Omkar, Prakash, Qasim', 'AP22110010701, AP22110010702, AP22110010703, AP22110010704, AP22110010705, AP22110010706, AP22110010707, AP22110010708, AP22110010709, AP22110010710, AP22110010711', 800.00, 'paid', 'GRP_67fbe530a7191', '2025-04-13', 'UDGAM17445614656', '2025-04-13 19:15:22'),
+('Karthik Rao', 'AP22110010701', 'karthik_rao@srmap.edu.in', '9632587410',
+ 'CSE', 'B', 'Udgam', NULL, 'Outdoor', 'Cricket',
+ 'Karthik, Dhruv, Hitesh, Imran, Jamal, Lokesh, Mahesh, Naveen, Omkar, Prakash, Qasim',
+ 'AP22110010701, AP22110010702, AP22110010703, AP22110010704, AP22110010705, AP22110010706, AP22110010707, AP22110010708, AP22110010709, AP22110010710, AP22110010711',
+ 800.00, 'paid', 'GRP_67fbe530a7191', '2025-04-13', 'UDGAM17445614656', '2025-04-13 19:15:22'),
 
-('Meera Lakshmi', 'AP22110010801', 'meera_lakshmi@srmap.edu.in', '8523697410', 'ECE', 'C', 'Udgam', NULL, 'Indoor', 'Table Tennis',
- 'Meera, Shankar', 'AP22110010801, AP22110010802', 800.00, 'paid', 'GRP_67fbe530a7192', '2025-04-13', 'UDGAM17445614657', '2025-04-13 19:18:45'),
+('Meera Lakshmi', 'AP22110010801', 'meera_lakshmi@srmap.edu.in', '8523697410',
+ 'ECE', 'C', 'Udgam', NULL, 'Indoor', 'Table Tennis',
+ 'Meera, Shankar', 'AP22110010801, AP22110010802',
+ 800.00, 'paid', 'GRP_67fbe530a7192', '2025-04-13', 'UDGAM17445614657', '2025-04-13 19:18:45'),
 
-('Tushar Reddy', 'AP22110010901', 'tushar_reddy@srmap.edu.in', '7418529630', 'CSE', 'A', 'Udgam', NULL, 'Indoor', 'Basketball',
- 'Tushar, Uday, Vimal, Waqar, Xavier', 'AP22110010901, AP22110010902, AP22110010903, AP22110010904, AP22110010905', 800.00, 'paid', 'GRP_67fbe530a7193', '2025-04-13', 'UDGAM17445614658', '2025-04-13 19:22:10');
+('Tushar Reddy', 'AP22110010901', 'tushar_reddy@srmap.edu.in', '7418529630',
+ 'CSE', 'A', 'Udgam', NULL, 'Indoor', 'Basketball',
+ 'Tushar, Uday, Vimal, Waqar, Xavier',
+ 'AP22110010901, AP22110010902, AP22110010903, AP22110010904, AP22110010905',
+ 800.00, 'paid', 'GRP_67fbe530a7193', '2025-04-13', 'UDGAM17445614658', '2025-04-13 19:22:10');
 
 CREATE TABLE group_payments (
     id INT PRIMARY KEY AUTO_INCREMENT,
